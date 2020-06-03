@@ -94,6 +94,8 @@ if(rollerskatingAnswer === 'rollerskating') {
 } else {
   alert('Naw, 8 wheels are better than 2! Later Sk8er!');
   //console.log('they answered \'Does Hexx enjoy biking or rollerskating more?\' incorrectly');
+  //-------------------final message--------------------
+  yourName = alert('Hey ' + yourName + '! That\'s enough fooling around. Let\'s get to the good stuff.');
 }
 
 
