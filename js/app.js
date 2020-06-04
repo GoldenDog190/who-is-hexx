@@ -101,26 +101,28 @@ alert('Hey ' + yourName + '! It\'s great to meet you! Thanks for visting my site
 
 var attemptsCorrectAnswer = 0;
 var slicesPrompt;
+var guessNumberSlices;
 var sliceAnswer = 'Hexx can eat 9 pizza slices in a single sitting!';
 
-while (attemptsCorrectAnswer < 4 && guessNumberSlices !== 28){
+while (attemptsCorrectAnswer < 4 && guessNumberSlices !== 9)
+{
   slicesPrompt = prompt('How many slices of pizza fo you think Hexx can eat in one sitting?');
-  var guessNumberSlices = parseInt (slicesPrompt);
+  guessNumberSlices = parseInt (slicesPrompt);
+  console.log(guessNumberSlices);
   if (guessNumberSlices === 9) {
     alert('Well, congrats ' + yourName + '! your\'e not wrong!' + sliceAnswer);
+    break;
   } else if (guessNumberSlices >= 10) {
     alert('That is a bit too much pizza for one person! Try a lil lower!');
+    //console.log(guessNumberSlices);
   } else if (guessNumberSlices <= 8) {
     alert('alright, a lil more than that!');
-  } else (guessNumberSlices === '') 
-    alert('What are you doing? Try a number!');
+  } else if(isNaN(guessNumberSlices));
+  alert('What are you doing? Try a number!');
+  if (attemptsCorrectAnswer === 3) {
+    alert('Alright ' + yourName + ', I\'m over it. Let\'s move on!');
+    break;
+  }
+  attemptsCorrectAnswer++;
+  console.log(attemptsCorrectAnswer);
 }
-attemptsCorrectAnswer++;
-console.log(attemptsCorrectAnswer);
-
-if (attemptsCorrectAnswer === 4 && guessNumberSlices !== 9) {
-  alert('Alright ' + yourName + 'I\'m over it. Let\'s move on!');
-}
-//-------------------final message--------------------
-yourName = alert('Welcome to my site, ' + yourName + '! Now, let\'s get down to business');
-
