@@ -90,7 +90,7 @@ if(summerAnswer === 'summer') {
 }
 loveSummer();
 //--------Q5-----------rollerskating--------------------
-
+function laterSkater(){
 var rollerskatingAnswer = prompt('Does Hexx enjoy biking or rollerskating more?').toLowerCase();
 if(rollerskatingAnswer === 'rollerskating') {
   alert('Yeah! This is how we roll!');
@@ -99,7 +99,8 @@ if(rollerskatingAnswer === 'rollerskating') {
   alert('Naw, 8 wheels are better than 2! Later Sk8er!');
   console.log('they answered \'Does Hexx enjoy biking or rollerskating more?\' incorrectly');
 }
-
+}
+laterSkater();
 //------Q6----------how many slices of pizza-----------
 
 // Shout out to Courtney for assisting with this code!
