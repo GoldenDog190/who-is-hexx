@@ -105,7 +105,7 @@ laterSkater();
 
 // Shout out to Courtney for assisting with this code!
 //Code Review and Guidance by Aadi Gephart (roommate) and Eddie DelRio (mentor).
-
+function pizzaSlice(){
 var attemptsCorrectAnswer = 0;
 var slicesPrompt;
 var guessNumberSlices;
@@ -132,7 +132,8 @@ while (attemptsCorrectAnswer < 4 && guessNumberSlices !== 9)
   }
   attemptsCorrectAnswer++;
 }
-
+}
+pizzaSlice();
 //------Q7----------hair colors----------------
 // Q: What hair colors has Hexx rocked in the past?
 
