@@ -42,7 +42,7 @@ var yourName = prompt('Hey friend, what name may I call you?');
 alert('Hey ' + yourName + '! It\'s great to meet you! Thanks for visting my site!');
 
 //--------Q1-----------country vs city----------------
-
+function countryGirl(){
 var countryAnswer = prompt('Was Hexx raised in the city or the country?').toLowerCase();
 if(countryAnswer === 'country') {
   alert('OMG! Is it THAT obvious?!?!');
@@ -51,9 +51,10 @@ if(countryAnswer === 'country') {
   alert('Ha! Yes! No one has to know that I was actually raised in the swamps of Texas!');
   console.log('they answered \'Was Hexx raised in the city or the country\' incorrectly');
 }
-
+}
+countryGirl();
 //--------Q2-----------motorcycles----------------
-
+function ridesMotorcycles(){
 var motorcycleAnswer = prompt('Would you believe that Hexx loves to ride motorcycles?').toLowerCase();
 if(motorcycleAnswer === 'yes') {
   alert('Duh, who doesn\'t love a beautifully hand-painted cruiser? Varoom!');
@@ -62,7 +63,8 @@ if(motorcycleAnswer === 'yes') {
   alert('Thats fair. I don\'t even have a car. But I do have my motorcycle license! ');
   console.log('they answered \'Would you believe that Hexx loves to ride motorcycles?\' incorrectly');
 }
-
+}
+ridesMotorcycles();
 //--------Q3-----------ballerina----------------
 
 var ballerinaAnswer = prompt('Do you think Hexx has ever been a professional ballerina?').toLowerCase();
