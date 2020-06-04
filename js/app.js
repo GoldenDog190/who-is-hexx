@@ -1,7 +1,7 @@
 'use strict';
 
 /*
-About Me Details:
+-------------------Game Plan:-----------------------------
 
 Q1: Was Hexx raised in the city or the country? - country
   if country
@@ -131,10 +131,12 @@ while (attemptsCorrectAnswer < 4 && guessNumberSlices !== 9)
 //------Q7----------hair colors----------------
 // Q: What hair colors has Hexx rocked in the past?
 
-var hairColors = ['blonde', 'red', 'black', 'purple', 'pink', 'green', 'blue', 'silver'];
-var hairColorsAnswer = prompt('What hair colors has Hexx rocked in the past?');
-console.log(hairColorsAnswer);
+// var hairColors = ['blonde', 'red', 'black', 'purple', 'pink', 'green', 'blue', 'silver'];
+// var hairColorsAnswer = prompt('What hair colors has Hexx rocked in the past?');
+// console.log(hairColorsAnswer);
 
-if (hairColorsAnswer === hairColors) {
-  alert('That\'s correct! ' + hairColorsAnswer + ' is ONE of em. Can you guess the rest?');
-}
+// if (hairColorsAnswer === hairColors) {
+//   alert('That\'s correct! ' + hairColorsAnswer + ' is ONE of em. Can you guess the rest?');
+// }
+
+
