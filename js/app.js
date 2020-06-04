@@ -97,32 +97,34 @@ alert('Hey ' + yourName + '! It\'s great to meet you! Thanks for visting my site
 //}
 
 //------Q6----------how many slices of pizza-----------
-// Shout out to Courtney for assisting with this code!
 
-var attemptsCorrectAnswer = 0;
-var slicesPrompt;
-var guessNumberSlices;
-var sliceAnswer = 'Hexx can eat 9 pizza slices in a single sitting!';
+// Shout out to Courtney for assisting with this code!
+//Code Review and Guidance by Aadi Gephart (roommate) and Eddie DelRio (mentor).
+
+// var attemptsCorrectAnswer = 0;
+// var slicesPrompt;
+// var guessNumberSlices;
+// var sliceAnswer = 'Hexx can eat 9 pizza slices in a single sitting!';
 
 while (attemptsCorrectAnswer < 4 && guessNumberSlices !== 9)
 {
   slicesPrompt = prompt('How many slices of pizza fo you think Hexx can eat in one sitting?');
   guessNumberSlices = parseInt (slicesPrompt);
-  console.log(guessNumberSlices);
+  //The parseInt() function parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems). https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
   if (guessNumberSlices === 9) {
-    alert('Well, congrats ' + yourName + '! your\'e not wrong!' + sliceAnswer);
+    alert('Well, congrats ' + yourName + '! Your\'e not wrong!' + sliceAnswer);
     break;
   } else if (guessNumberSlices >= 10) {
     alert('That is a bit too much pizza for one person! Try a lil lower!');
-    //console.log(guessNumberSlices);
   } else if (guessNumberSlices <= 8) {
     alert('alright, a lil more than that!');
-  } else if(isNaN(guessNumberSlices));
-  alert('What are you doing? Try a number!');
-  if (attemptsCorrectAnswer === 3) {
-    alert('Alright ' + yourName + ', I\'m over it. Let\'s move on!');
+  } else if(isNaN(guessNumberSlices)) {
+    alert('What are you doing? Try a number!');
+  } if (attemptsCorrectAnswer === 3) {
+    alert('Alright ' + yourName + ', I\'m over it. ' + sliceAnswer + ' Let\'s move on!');
     break;
   }
   attemptsCorrectAnswer++;
-  console.log(attemptsCorrectAnswer);
 }
+
+
