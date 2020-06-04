@@ -66,7 +66,7 @@ if(motorcycleAnswer === 'yes') {
 }
 ridesMotorcycles();
 //--------Q3-----------ballerina----------------
-
+function isBallerina(){ 
 var ballerinaAnswer = prompt('Do you think Hexx has ever been a professional ballerina?').toLowerCase();
 if(ballerinaAnswer === 'yes') {
   alert('Yup. Ballet is the reason my pinky toes don\'t touch the ground.');
@@ -75,9 +75,10 @@ if(ballerinaAnswer === 'yes') {
   alert('Really? I mean, I know I don\'t come off as the most graceful but give me some credit! I was a ballerina for 18 years!');
   console.log('they answered \'Do you think Hexx has ever been a professional ballerina?\' incorrectly');
 }
-
+}
+isBallerina();
 //--------Q4-----------summer vs winter----------------
-
+function loveSummer(){
 var summerAnswer = prompt('Does Hexx prefer summer or winter?').toLowerCase();
 if(summerAnswer === 'summer') {
   alert('Yes! Give me all the heat!');
@@ -86,7 +87,8 @@ if(summerAnswer === 'summer') {
   alert('Nooooo, snow is too cold to enjoy. Prove me wrong.');
   console.log('they answered \'Does Hexx prefer summer or winter?\' incorrectly');
 }
-
+}
+loveSummer();
 //--------Q5-----------rollerskating--------------------
 
 var rollerskatingAnswer = prompt('Does Hexx enjoy biking or rollerskating more?').toLowerCase();

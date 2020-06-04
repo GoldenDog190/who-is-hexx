@@ -13,5 +13,9 @@ The user will find a personalized experience while answering engaging questions 
 - 
 - 
 
+## Paired Programming 
+- Amelia W was the driver for turning questions into 1-6 into functions - date 6/4/20 Lab 04
+
+
 ## Reflections and Comments
 - Need more practice with loops
